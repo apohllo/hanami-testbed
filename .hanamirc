@@ -1,0 +1,3 @@
+project=testbed
+test=minitest
+template=erb
