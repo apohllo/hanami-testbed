@@ -6,8 +6,8 @@ class AuthorRepository < ROM::Repository[:authors]
   commands :create
   struct_namespace Entities
 
-  def create(user)
-    authors.changeset(:create, user).map(:add_timestamps).commit
+  def create(author)
+    authors.changeset(:create, author).map(:add_timestamps).commit
   end
 
   def create_with_books(name, book_ids)

@@ -1,5 +1,4 @@
 require 'rake'
-#require 'hanami/rake_tasks'
 require 'rake/testtask'
 require 'rom/sql/rake_task'
 
