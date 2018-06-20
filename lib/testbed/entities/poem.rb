@@ -1,2 +1,4 @@
-#class Poem < Hanami::Entity
-#end
+module Entities
+  class Poem < ROM::Struct
+  end
+end

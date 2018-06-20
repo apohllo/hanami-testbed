@@ -4,6 +4,11 @@ class AuthorRepository < ROM::Repository[:authors]
   include Testbed::Import.args['testbed.rom']
 
   commands :create
+  struct_namespace Entities
+
+  def create(user)
+    authors.changeset(:create, user).map(:add_timestamps).commit
+  end
 
   def create_with_books(name, book_ids)
     authors.

@@ -1,2 +1,4 @@
-#class Book < Hanami::Entity
-#end
+module Entities
+  class Book < ROM::Struct
+  end
+end
